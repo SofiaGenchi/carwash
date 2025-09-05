@@ -1,67 +1,67 @@
-*{
-    padding: 0;
-    margin: 0;
-    font-family: sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
 }
 
 header {
-    display:  flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
 }
 
 header h1 {
-    font-size: 2.5rem;
-    font-style: oblique;
+  font-size: 2.5rem;
+  font-style: oblique;
 }
 
 nav {
-    height: 60%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
 }
 
 ul {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
 
 li {
-    list-style-type: none;
-    font-size: 1.2rem;
-    font-weight: 400;
+  list-style-type: none;
+  font-size: 1.2rem;
+  font-weight: 400;
 }
 
 li:hover {
-    cursor: pointer;
-    color: cornflowerblue;
+  cursor: pointer;
+  color: #ccc;
 }
 
 header div p {
-    width: 140px;
-    height: 50px;
+  width: 140px;
+  height: 50px;
 }
 
-.contenedor-btn p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1rem;
-    font-weight: 700;
-    border: 4px solid black;
-    background: black;
-    color: white;
-    border-radius: 10px;
+.contenedor-btn p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 700;
+  border: 1px solid rgba(0, 0, 0, 0.11);
+  background: black;
+  color: white;
+  border-radius: 10px;
 }
 
-.contenedor-btn p:hover{
-    background: white;
-    color: black;
-    cursor: pointer;
+.contenedor-btn p:hover {
+  background: #ccc;
+  color: black;
+  cursor: pointer;
 }
 
 /* ===========================
@@ -69,128 +69,266 @@ section principal
 =============================*/
 
 section .section-principal {
-    background-image: url('./img/carwash-section2.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 400px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  background-image: url("./img/carwash-section2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .section-principal .sect-titulo {
-    color: white;
+  color: white;
 }
 .sect-titulo h2 {
-    font-size: 3.5rem;
+  font-size: 3.5rem;
 }
 
 .sect-titulo p {
-    margin-top: 5%;
-    font-size: 1.2rem;
-    background: #ffff;
-    color: #000000;
-    border-radius: 10px;
-    width: 35%;
-    height: 50px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin-top: 5%;
+  font-size: 1.2rem;
+  background: #ffff;
+  color: #000000;
+  border-radius: 10px;
+  width: 35%;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sect-titulo p:hover {
-    background: #000000;
-    color: #ffff;
-    cursor: pointer;
+  background: #ccc;
+  color: black;
+  cursor: pointer;
 }
-
 
 /* SERVICIOS----- */
 .sections {
-    display:  flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-.section-uno, .section-dos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.section-uno,
+.section-dos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.section-uno div, .section-dos div {
-    width: 90%;
+.section-uno div,
+.section-dos div {
+  width: 90%;
 }
 
 /* SERVICIOS -------------- */
-.section-servicios h2, .section-turnos h2, .section-precios h2, .section-contacto h2 {
-    font-size: 2.5rem;
-    text-align: start;
-    margin: 5% 0 2% 0;
+.section-servicios h2,
+.section-turnos h2,
+.section-precios h2,
+.section-contacto h2 {
+  font-size: 2.5rem;
+  text-align: start;
+  margin: 5% 0 2% 0;
+}
+
+.section-turnos p {
+  width: 70%;
 }
 
 .servicios {
-    display: flex;
+  display: flex;
 }
 
- /* Contenedor de servicios en fila con flex (no cambia tu HTML) */
-.servicios{
+.servicios {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   gap: 20px;
   justify-content: space-between;
-  padding: 24px 0;
+  /* padding: 24px 0; */
 }
 
 /* Card */
-.servicios .card{
-  flex: 1 1 240px;                 /* ancho flexible mínimo */
+.servicios .card {
+  flex: 1 1 240px;
   background: #fff;
   border: 1px solid #e9e9e9;
   border-radius: 14px;
   padding: 18px;
-  box-shadow: 0 1px 2px rgba(0,0,0,.06), 0 6px 20px rgba(0,0,0,.04);
-  transition: transform .15s ease, box-shadow .15s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06), 0 6px 20px rgba(0, 0, 0, 0.04);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
-.servicios .card:hover{
+.servicios .card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 2px 6px rgba(0,0,0,.06), 0 14px 28px rgba(0,0,0,.06);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06), 0 14px 28px rgba(0, 0, 0, 0.06);
 }
 
-/* Fila superior dentro de la card (icono + título) */
-.servicios .card > div{
+.servicios .card > div {
   display: flex;
   align-items: center;
   gap: 12px;
   margin-bottom: 8px;
 }
 
-/* Icono “encapsulado” */
-.servicios .card svg{
-  width: 50px !important;
-  height: 50px !important;
+.servicios .card svg {
+  width: 40px !important;
+  height: 40px !important;
   display: block;
   padding: 8px;
   border: 1px solid #e9e9e9;
   border-radius: 10px;
   background: #fff;
-  box-sizing: content-box; /* mantiene el tamaño visual */
+  box-sizing: content-box;
 }
 
-/* Título (el <p> que está junto al SVG) */
-.servicios .card > div > p{
+.servicios .card > div > p {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 700;
   color: #0b0b0b;
 }
 
-/* Descripción (el <p> final de la card) */
-.servicios .card > p{
+.servicios .card > p {
   margin: 6px 0 0;
   font-size: 1.2rem;
   line-height: 1.45;
   color: #5c5c5c;
+}
+
+/* ==========================
+              CONTACTO
+=========================== */
+.contacto__container {
+  max-width: 1100px;
+}
+
+.contacto__card {
+  /* background: #111; */
+  color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 14px;
+  /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25); */
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.contacto__form {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.contacto__label {
+  color: #bbb;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.contacto__input {
+  background: #efefef;
+  color: #111;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 14px;
+  margin-bottom: 15px;
+  outline: none;
+}
+
+.contacto__input:focus {
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2);
+}
+
+.contacto__message {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.contacto__textarea {
+  background: #efefef;
+  color: #111;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 14px;
+  min-height: 180px;
+  resize: vertical;
+  outline: none;
+  margin-bottom: 15px;
+}
+
+.contacto__textarea:focus {
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2);
+}
+
+.contacto__btn {
+  align-items: flex-end;
+  background: #efefef;
+  color: #111;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+
+
+
+
+/* ========================
+            footer
+========================= */
+.footer{
+    margin-top: 5%;
+    background: #111;
+    color: #f5f5f5;
+    padding: 30px 20px 15px;
+}
+
+.footer__container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer__title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.footer__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__list li {
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+.footer__list a {
+    color: #f5f5f5;
+    text-decoration: none;
+    transition: color .2s ease;
+}
+
+.footer__list a:hover {
+  color: #ccc;
+}
+
+.footer__copy {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 25px;
+    color: #aaa;
 }
